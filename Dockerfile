@@ -6,5 +6,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install libffi-dev
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install ruby-dev
 RUN gem install fpm --no-ri --no-rdoc
 COPY entrypoint.sh /
-
 ENTRYPOINT /entrypoint.sh
