@@ -1,8 +1,8 @@
-=Telegraf custom builder
+# Telegraf custom builder
 
 Dockerfile to build a image which compiles a custom version of influxdata/telegraf
 
-== Build Docker Image:
+## Build Docker Image:
 
 ```
 docker build -t <name> .
@@ -10,7 +10,7 @@ docker build -t <name> .
 
 If you need to merge other PR different than #1407 and #1526 modify entrypoint.sh script accordingly
 
-== Usage
+## Usage
 
 ```
 docker run --rm -v $PWD:/tmp the-cocktail/telegraf_custom_builder
